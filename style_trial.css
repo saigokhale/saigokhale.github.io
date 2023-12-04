@@ -1,0 +1,195 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set base font size and line height */
+html {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/*contact logos*/
+.logo-row {
+  display: flex;
+  /*justify-content: space-around;*/
+  align-items: center;
+}
+
+.logo {
+  width: 22px; /* Set the width as needed */
+  height: 22px;
+  margin: 8px; /* Add margin for spacing between logos */
+}
+
+/* Add some default styles */
+body {
+    font-family: 'Arial', sans-serif;
+	background-color: #ffffff; 
+    color: #00084B; 
+}
+
+.container {
+    max-width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+projects{
+	flex:wrap;
+	justify:center,
+	-mx-2
+	
+}
+
+project-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: -0.5rem;
+}
+
+/* This container is needed to position the front and back side */
+.card-container {
+  display: flex;
+}
+
+.card {
+  width: 200px;
+  height: 200px;
+  margin: 0 10px;
+  perspective: 1000px;
+  padding: 16px;
+}
+
+.card-image{
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;	
+}
+
+.overlay-text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff; 
+}
+
+.overlay-text h3,
+.overlay-text p {
+  margin: 0;
+}
+
+.card-inner {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+
+.card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.card-front {
+  background-color: #fff;
+}
+
+.card-back {
+  background-color: #3498db;
+  color: #fff;
+  transform: rotateY(180deg);
+}
+
+/*Publications*/
+/* Add any additional styles for the publications section */
+#publications {
+  /* Add styles specific to the Publications section */
+}
+
+#publications ul {
+  list-style-type: disc;
+  padding: 0;
+}
+
+#publications li {
+  margin-bottom: 8px;
+}
+
+#publications a {
+  color: #3498db; /* Adjust the hyperlink color based on your design */
+  text-decoration: none;
+}
+
+#publications a:hover {
+  text-decoration: underline;
+}
+
+/*Nav buttons*/
+#nav_button {
+  /* Add styles specific to the Publications section */
+}
+
+#nav_button ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#nav_button li {
+  float: left;
+}
+
+#nav_button a {
+  color: #3498db; /* Adjust the hyperlink color based on your design */
+  text-decoration: none;
+}
+
+#nav_button a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive grid layout for projects */
+/* Customize grid layout based on your design preferences */
+@media (min-width: 640px) {
+    .grid-cols-1 {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+}
+
+@media (min-width: 768px) {
+    .grid-cols-2 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (min-width: 1024px) {
+    .grid-cols-3 {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+/* Add your Tailwind CSS classes here */
+/* ... (all the Tailwind CSS classes from the previous code) */
