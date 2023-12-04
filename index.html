@@ -15,10 +15,11 @@
 
     <!-- Navigation -->
     <nav class="bg-blue-500 p-4 text-white">
-        <div class="container mx-auto">
-            <h1 class="text-2xl font-semibold">Sai Gokhale</h1>
-            <p class="text-sm"> </p>
-        </div>
+		<div class="nav_button">
+			<ul class="nav_button">
+			<li class="nav_button"><a href="https://drive.google.com/drive/u/0/folders/18e5YAiYa0ozzjo4ICTadOqIYU0BZwMfz"> Resume</a></li>
+			</ul>
+		</div>
     </nav>
 
     <!-- Main Content -->
@@ -32,7 +33,21 @@
 			</div>
 			<div>
 				<h1 class="text-3xl font-semibold">Sai Gokhale</h1>
-				<p class="text-sm">Computer Engineer | Bangalore, India</p>
+				<p class="text-sm">  Computer Engineer | Bangalore, India</p>
+				<p class="text-sm"> 
+				<section class="logo-row">
+				  <a href="mailto:saigokhale2002@gmail.com" target="_blank">
+					<img src="email-logo.png" alt="email" class="logo">
+				  </a>
+				  <a href="https://www.linkedin.com/in/sai-gokhale" target="_blank">
+					<img src="linkedin-logo.png" alt="Linkedin logo" class="logo">
+				  </a>
+
+				  <a href="https://www.github.com/saigokhale" target="_blank">
+					<img src="github-logo.png" alt="Github logo" class="logo">
+				  </a>
+				</section>
+				</p>
 			</div>
 		</section>
 		
@@ -58,11 +73,16 @@
 				<!-- Card 1 -->
 				<td class="card" id="card1">
 				  <div class="card-inner">
-					<div class="card-front">
-					  <h2>Card 1 Front</h2>
+					
+					<div class="card-front"> 					  
+						<img class="card-image" src='Images/1.png'/> 
 					</div>
+					
 					<div class="card-back">
-					  <p>Card 1 Back Content</p>
+						<div class="overlay-text">
+						  <h3>Fusion of Thermal and Visible Images</h3>
+						  <p>Add link</p>
+						</div>
 					</div>
 				  </div>
 				</td>
@@ -71,7 +91,7 @@
 				<td class="card" id="card2">
 				  <div class="card-inner">
 					<div class="card-front">
-					  <h2>Card 2 Front</h2>
+					  <img class="card-image" src='Images/2.png'/> 
 					</div>
 					<div class="card-back">
 					  <p>Card 2 Back Content</p>
@@ -83,7 +103,7 @@
 				<td class="card" id="card3">
 				  <div class="card-inner">
 					<div class="card-front">
-					  <h2>Card 3 Front</h2>
+					  <img class="card-image" src='Images/3.png'/> 
 					</div>
 					<div class="card-back">
 					  <p>Card 3 Back Content</p>
@@ -91,15 +111,15 @@
 				  </div>
 				</td>
 				
-				</tr>
+				<!--/tr>
 				
-				<tr>
+				<tr-->
 				
 				<!-- Card 4 -->
 				<td class="card" id="card4">
 				  <div class="card-inner">
 					<div class="card-front">
-					  <h2>Card 4 Front</h2>
+					  <img class="card-image" src='Images/4.png'/> 
 					</div>
 					<div class="card-back">
 					  <p>Card 4 Back Content</p>
@@ -107,9 +127,9 @@
 				  </div>
 				</td>
 				
-				<td></td>
+				<!--td></td>
 				
-				<td></td>
+				<td></td-->
 				
 				</tr>
 				<!-- Repeat the above structure for Card 3 to Card 6 -->
@@ -117,32 +137,57 @@
 			</table>
 		</section>
 		
-        <!-- Work Experience Section -->
+        <!-- Research Publications Section -->
+        <section id="publications" class="mb-8">
+            <h2 class="text-3xl font-semibold mb-4">Publications</h2>
+            <ul class="list-disc list-inside">
+                <li> in progress: P. Singhal, S. Gokhale, W. Rahee, S. Arva, K. Ketan, “ABCDEF”, Journal of AI and Ethics, SpringerLink</li>
+                <li> in review: S. Gokhale, R. Kadu, G. Deshmukh, S. Chaudhari, S. Jahirabadkar, R. Aditya, “Seeing Through Darkness: Fusion of Optical and Thermal Features for Improved Space Object Classification”, International Journal of Image and Data Fusion </li>
+                <li> <a href="https://google.com" target="_blank"> S. Chaudhari, G. Deshmukh, S. Gokhale, R. Kadu, S. Jahirabadkar, A. R., “A Survey of Visible and Infrared Image Fusion Methodologies”, ICICCT, Springer Nature Proceedings, 2023 </li>
+				<li> <a href="https://google.com" target="_blank"> S. Gokhale and P. Deshpande, "A Survey of Morphological Analysis for Marathi Language," 2022 4th International Conference on Artificial Intelligence and Speech Technology (AIST), Delhi, India, 2022, pp. 1-4, doi: 10.1109/AIST55798.2022.10065304. </li>
+				<!-- Add more publications as needed -->
+            </ul>
+        </section>
+		
+		<!-- Work Experience Section -->
         <section class="mb-8">
             <h2 class="text-3xl font-semibold mb-4">Work Experience</h2>
             <div class="grid gap-4">
                 <div class="p-4 bg-white rounded shadow">
-                    <h3 class="text-xl font-semibold">Company XYZ</h3>
-                    <p class="text-gray-700">Software Engineer | [Start Date] - [End Date]</p>
+                    <h3 class="text-xl font-semibold">Oracle, India</h3>
+                    <p class="text-gray-700">Member of Technical Staff | Jul 2023 - now </p>
                     <p class="mt-2">Description of your responsibilities and achievements in this role.</p>
                 </div>
+				<div class="p-4 bg-white rounded shadow">
+                    <h3 class="text-xl font-semibold">Oracle, India</h3>
+                    <p class="text-gray-700">Server Technology Intern | Jun 2022 - Aug 2022 </p>
+                    <p class="mt-2">Description of your responsibilities and achievements in this role.</p>
+                </div>
+				<div class="p-4 bg-white rounded shadow">
+                    <h3 class="text-xl font-semibold">vConstruct</h3>
+                    <p class="text-gray-700">Data Science Intern |  Mar 2021 - Jun 2021</p>
+                    <p class="mt-2">Description of your responsibilities and achievements in this role.</p>
+                </div>
+				
                 <!-- Add more work experience entries as needed -->
             </div>
         </section>
-
-        <!-- Research Publications Section -->
-        <section class="mb-8">
-            <h2 class="text-3xl font-semibold mb-4">Research Publications</h2>
-            <ul class="list-disc list-inside">
-                <li>Title of Publication 1 - Journal/Conference Name, Year</li>
-                <li>Title of Publication 2 - Journal/Conference Name, Year</li>
-                <!-- Add more publications as needed -->
-            </ul>
+		
+		<section class="mb-8">
+			<h2 class="text-2xl font-semibold mb-4">Interests</h2>
+            <p class="text-gray-700">
+                I enjoy photgraphy, painting and cooking in my free time!
+				You can check my work <a href="https://vsco.co/saigokhale" target="_blank"> here. </a>
+            </p>
         </section>
 		
-	
     </div>
 	
 </body>
 
 </html>
+
+
+
+
+
