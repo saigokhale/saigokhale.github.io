@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sai Gokhale</title>
 	<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="style.css">
 	<!-- Add this line inside the <head> section of your HTML -->
 	<script defer src="script.js"></script>
 </head>
@@ -14,11 +15,28 @@
 <body class="bg-gray-100">
 
     <!-- Navigation -->
-    <nav class="bg-blue-500 p-4 text-white">
-		<div class="nav_button">
-			<ul class="nav_button">
-			<li class="nav_button"><a href="https://drive.google.com/drive/u/0/folders/18e5YAiYa0ozzjo4ICTadOqIYU0BZwMfz"> Resume</a></li>
+    <nav class="navbar bg-blue-500 p-4 text-white">
+		<!--
+		<section id="nav-button">
+		<ul>
+		  <li class="nav-title">
+			<h2> Sai Gokhale </h2>
+	      </li>
+		  <li ><a href="http://saigokhale.github.io">Home</a></li>
+		  <li ><a href="https://drive.google.com/file/d/1LZG344k8DW4hvpz2loe0_GDx2iy3QJeN/view?usp=drive_link">Resume</a></li>
+		  <li ><a href="#projects">Research</a></li>
+		  <!--<li ><a href="#gallery">Gallery</a></li>-->
+		<!--
 			</ul>
+			</section>
+		-->
+		<div class="w3-bar">
+		  <a href="mailto:saigokhale2002@gmail.com" class="w3-bar-item w3-button w3-hover-none w3-text-white w3-hover-text-black w3-right">Contact</a>
+		  <a href="https://drive.google.com/file/d/1LZG344k8DW4hvpz2loe0_GDx2iy3QJeN/view?usp=drive_link" class="w3-bar-item w3-button w3-hover-none w3-text-white w3-hover-text-black w3-right">Resume</a>
+		  <a href="http://saigokhale.github.io" class="w3-bar-item w3-button w3-hover-none w3-text-white w3-hover-text-black w3-right">Home</a>
+		  
+		  <a href="http://saigokhale.github.io" class="w3-bar-item w3-button w3-large w3-left w3-hover-none w3-text-white  w3-hover-text-white">Sai Gokhale</a>
+		  
 		</div>
     </nav>
 
@@ -39,11 +57,11 @@
 				  <a href="mailto:saigokhale2002@gmail.com" target="_blank">
 					<img src="email-logo.png" alt="email" class="logo">
 				  </a>
-				  <a href="https://www.linkedin.com/in/sai-gokhale" target="_blank">
+				  <a href="https://www.linkedin.com/in/sai-gokhale-5460131b1/" target="_blank">
 					<img src="linkedin-logo.png" alt="Linkedin logo" class="logo">
 				  </a>
 
-				  <a href="https://www.github.com/saigokhale" target="_blank">
+				  <a href="https://github.com/saigokhale" target="_blank">
 					<img src="github-logo.png" alt="Github logo" class="logo">
 				  </a>
 				</section>
@@ -69,25 +87,9 @@
 			
 			<!--div class="card-container"-->
 			<table class="card-container">
-				<tr>
-				<!-- Card 1 -->
-				<td class="card" id="card1">
-				  <div class="card-inner">
+				<!--
+				Flipping card template 
 					
-					<div class="card-front"> 					  
-						<img class="card-image" src='Images/1.png'/> 
-					</div>
-					
-					<div class="card-back">
-						<div class="overlay-text">
-						  <h3>Fusion of Thermal and Visible Images</h3>
-						  <p>Add link</p>
-						</div>
-					</div>
-				  </div>
-				</td>
-
-				<!-- Card 2 -->
 				<td class="card" id="card2">
 				  <div class="card-inner">
 					<div class="card-front">
@@ -98,34 +100,126 @@
 					</div>
 				  </div>
 				</td>
+
+				-->
+				
+			<tr>
+				<!-- Card 1 -->
+				<td class="card w-full md:w-1/3 px-2 py-4">
+				  <div class="bg-white p-4 rounded-lg shadow-md transform transition hover:-translate-y-2"> 
+					<h3 class="text-xl font-medium mb-4">Space Debris Detection</h3>
+					<p class="text-gray-700 text-base overflow-hidden text-ellipsis h-24">
+						Fusing thermal and visual image properties of space objects to detect and classify the objects into satellite and debris
+					</p>
+
+					<p>
+						<section class="logo-row">
+						<a href="https://github.com/saigokhale" target="_blank">
+							<img src="github-logo.png" alt="Github logo" class="logo">
+						</a>
+						
+						<a href="https://github.com/saigokhale" target="_blank">
+							<img src="arrow-out.svg" alt="Arrow" class="logo">
+						</a>
+						</section>
+					</p>
+				  </div>
+				</td>
+
+				<!-- Card 2 -->
+				<td class="card w-full md:w-1/3 px-2 py-4">
+				  <div class="bg-white p-4 rounded-lg shadow-md transform transition hover:-translate-y-2"> 
+					<h3 class="text-xl font-medium mb-4">Demographic Bias Mitigation in FER</h3>
+					<p class="text-gray-700 text-base overflow-hidden h-24">
+						Detection and mitigation of historical demographic bias in emotion recognition datasets using multi source domain adaptation
+					</p>
+
+					<p>
+						<section class="logo-row">
+						<a href="https://github.com/saigokhale" target="_blank">
+							<img src="github-logo.png" alt="Github logo" class="logo">
+						</a>
+						
+						<a href="https://github.com/saigokhale" target="_blank">
+							<img src="arrow-out.svg" alt="Arrow" class="logo">
+						</a>
+						</section>
+					</p>
+					
+				  </div>
+				</td>
 				
 				<!-- Card 3 -->
-				<td class="card" id="card3">
-				  <div class="card-inner">
-					<div class="card-front">
-					  <img class="card-image" src='Images/3.png'/> 
-					</div>
-					<div class="card-back">
-					  <p>Card 3 Back Content</p>
-					</div>
+				<td class="card w-full md:w-1/3 px-2 py-4">
+				  <div class="bg-white p-4 rounded-lg shadow-md transform transition hover:-translate-y-2"> 
+					<h3 class="text-xl font-medium mb-4">Morphological Analysis for Marathi</h3>
+					<p class="text-gray-700 text-base overflow-hidden h-24">
+					A survey of morphological features of Marathi, which have proven useful in applications like speech synthesis, machine translation, information retrieval and spell checking.
+					</p>
+
+					<p>
+						<section class="logo-row">
+						<a href="https://github.com/saigokhale" target="_blank">
+							<img src="github-logo.png" alt="Github logo" class="logo">
+						</a>
+						
+						<a href="https://github.com/saigokhale" target="_blank">
+							<img src="arrow-out.svg" alt="Arrow" class="logo">
+						</a>
+						</section>
+					</p>
+					
 				  </div>
 				</td>
+			</tr>
 				
-				<!--/tr>
-				
-				<tr-->
-				
+			<tr>
 				<!-- Card 4 -->
-				<td class="card" id="card4">
-				  <div class="card-inner">
-					<div class="card-front">
-					  <img class="card-image" src='Images/4.png'/> 
-					</div>
-					<div class="card-back">
-					  <p>Card 4 Back Content</p>
-					</div>
+				<td class="card w-full md:w-1/3 px-2 py-4">
+				  <div class="bg-white p-4 rounded-lg shadow-md transform transition hover:-translate-y-2"> 
+					<h3 class="text-xl font-medium mb-4">Discord Bot for Content Aggregation</h3>
+					<p class="text-gray-700 text-base overflow-hidden h-24">
+					Discord bot that scrapes news from the internet whenever the user requests a query
+					</p>
+
+					<p>
+						<section class="logo-row">
+						<a href="https://github.com/saigokhale" target="_blank">
+							<img src="github-logo.png" alt="Github logo" class="logo">
+						</a>
+						
+						<a href="https://github.com/saigokhale" target="_blank">
+							<img src="arrow-out.svg" alt="Arrow" class="logo">
+						</a>
+						</section>
+					</p>
+					
 				  </div>
 				</td>
+				
+				<!-- Card 5 -->
+				<td class="card w-full md:w-1/3 px-2 py-4">
+				  <div class="bg-white p-4 rounded-lg shadow-md transform transition hover:-translate-y-2"> 
+					<h3 class="text-xl font-medium mb-4">Air Canvas: Drawing in the air</h3>
+					<p class="text-gray-700 text-base overflow-hidden h-24">
+					An application which tracks the motion of a pen and creates drawings when drawn in the Air. The drawings are saved to clipboard. 
+					</p>
+
+					<p>
+						<section class="logo-row">
+						<a href="https://github.com/saigokhale" target="_blank">
+							<img src="github-logo.png" alt="Github logo" class="logo">
+						</a>
+						
+						<a href="https://github.com/saigokhale" target="_blank">
+							<img src="arrow-out.svg" alt="Arrow" class="logo">
+						</a>
+						</section>
+					</p>
+					
+				  </div>
+				</td>
+				
 				
 				<!--td></td>
 				
@@ -141,8 +235,9 @@
         <section id="publications" class="mb-8">
             <h2 class="text-3xl font-semibold mb-4">Publications</h2>
             <ul class="list-disc list-inside">
-                <li> in progress: P. Singhal, S. Gokhale, W. Rahee, S. Arva, K. Ketan, “ABCDEF”, Journal of AI and Ethics, SpringerLink</li>
-                <li> in review: S. Gokhale, R. Kadu, G. Deshmukh, S. Chaudhari, S. Jahirabadkar, R. Aditya, “Seeing Through Darkness: Fusion of Optical and Thermal Features for Improved Space Object Classification”, International Journal of Image and Data Fusion </li>
+                <!--<li> in progress: P. Singhal, S. Gokhale, W. Rahee, S. Arva, K. Ketan, “ABCDEF”, Journal of AI and Ethics, SpringerLink</li>
+                -->
+				<li> in review: S. Gokhale, R. Kadu, G. Deshmukh, S. Chaudhari, S. Jahirabadkar, R. Aditya, “Seeing Through Darkness: Fusion of Optical and Thermal Features for Improved Space Object Classification”, International Journal of Image and Data Fusion </li>
                 <li> <a href="https://google.com" target="_blank"> S. Chaudhari, G. Deshmukh, S. Gokhale, R. Kadu, S. Jahirabadkar, A. R., “A Survey of Visible and Infrared Image Fusion Methodologies”, ICICCT, Springer Nature Proceedings, 2023 </li>
 				<li> <a href="https://google.com" target="_blank"> S. Gokhale and P. Deshpande, "A Survey of Morphological Analysis for Marathi Language," 2022 4th International Conference on Artificial Intelligence and Speech Technology (AIST), Delhi, India, 2022, pp. 1-4, doi: 10.1109/AIST55798.2022.10065304. </li>
 				<!-- Add more publications as needed -->
@@ -156,17 +251,17 @@
                 <div class="p-4 bg-white rounded shadow">
                     <h3 class="text-xl font-semibold">Oracle, India</h3>
                     <p class="text-gray-700">Member of Technical Staff | Jul 2023 - now </p>
-                    <p class="mt-2">Description of your responsibilities and achievements in this role.</p>
+                    
                 </div>
 				<div class="p-4 bg-white rounded shadow">
                     <h3 class="text-xl font-semibold">Oracle, India</h3>
                     <p class="text-gray-700">Server Technology Intern | Jun 2022 - Aug 2022 </p>
-                    <p class="mt-2">Description of your responsibilities and achievements in this role.</p>
-                </div>
+                    <!-- <p class="mt-2">Description of your responsibilities and achievements in this role.</p>
+					-->
+				</div>
 				<div class="p-4 bg-white rounded shadow">
                     <h3 class="text-xl font-semibold">vConstruct</h3>
                     <p class="text-gray-700">Data Science Intern |  Mar 2021 - Jun 2021</p>
-                    <p class="mt-2">Description of your responsibilities and achievements in this role.</p>
                 </div>
 				
                 <!-- Add more work experience entries as needed -->

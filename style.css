@@ -57,11 +57,11 @@ project-container{
 }
 
 .card {
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: 200%;
   margin: 0 10px;
   perspective: 1000px;
-  padding: 16px;
+  padding: 10px;
 }
 
 .card-image{
@@ -90,10 +90,6 @@ project-container{
 
 }
 
-.overlay-text h3,
-.overlay-text p {
-  margin: 0;
-}
 
 .card-inner {
   width: 100%;
