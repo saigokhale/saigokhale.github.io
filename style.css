@@ -75,11 +75,19 @@ project-container{
 
 .overlay-text{
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #00084B; 
+  font-size: 2em; /* Set the initial font size */
   text-align: center;
-  color: #fff; 
+  max-width: 80%; /* Adjust the maximum width as needed */
+  word-wrap: break-word;
+
 }
 
 .overlay-text h3,
@@ -146,50 +154,72 @@ project-container{
 }
 
 /*Nav buttons*/
-#nav_button {
-  /* Add styles specific to the Publications section */
+.navbar{
+  background-color: #blue-500;
+  overflow: hidden;
 }
 
-#nav_button ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
+nav-button-container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
   display: flex;
   justify-content: flex-end;
 }
 
-#nav_button li {
+#nav-button {
+  /* Add styles specific to the button section */
+  color: #ffffff;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#nav-button ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end; /* Align items to the right */
+}
+
+#nav-button li {
+  margin-left: 10px;
   float: left;
 }
 
-#nav_button a {
-  color: #3498db; /* Adjust the hyperlink color based on your design */
+#nav-button a {
+  color: #ffffff; /* Adjust the hyperlink color based on your design */
   text-decoration: none;
 }
 
-#nav_button a:hover {
+#nav-button a:hover {
   text-decoration: underline;
 }
 
-/* Responsive grid layout for projects */
-/* Customize grid layout based on your design preferences */
-@media (min-width: 640px) {
-    .grid-cols-1 {
-        grid-template-columns: repeat(1, minmax(0, 1fr));
-    }
+#nav-button a {
+  color: #ffffff; /* Adjust the hyperlink color based on your design */
+  text-decoration: none;
 }
 
-@media (min-width: 768px) {
-    .grid-cols-2 {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
+#nav-button a:hover {
+  text-decoration: underline;
 }
 
-@media (min-width: 1024px) {
-    .grid-cols-3 {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-    }
+nav-title{
+  color: white;
+  margin: 0;
+}
+
+@media (max-width: 200px) {
+  /* Media query for smaller screens to reduce font size */
+  .overlay-text {
+    font-size: 1em;
+  }
+
+
 }
 /* Add your Tailwind CSS classes here */
 /* ... (all the Tailwind CSS classes from the previous code) */
