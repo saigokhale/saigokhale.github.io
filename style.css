@@ -11,66 +11,73 @@ html {
     line-height: 1.5;
 }
 
+section{
+  padding: 3px;
+  margin: 10px;
+}
+
 /*contact logos*/
 .logo-row {
   display: flex;
-  /*justify-content: space-around;*/
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin : 1px;
+  border-top: 10px;
+  padding: 1px
 }
 
 .logo {
-  width: 22px; /* Set the width as needed */
-  height: 22px;
-  margin: 8px; /* Add margin for spacing between logos */
+  width: 18px; /* Set the width as needed */
+  height: 18px;
+  margin: 6px; /*Add margin for spacing between logos*/
 }
 
 /* Add some default styles */
 body {
     font-family: 'Arial', sans-serif;
-	background-color: #ffffff; 
+	  background-color: #ffffff; 
     color: #00084B; 
 }
 
 .container {
-    max-width: 100%;
-    margin-right: auto;
-    margin-left: auto;
+  max-width: 100%;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 projects{
-	flex:wrap;
-	justify:center,
-	-mx-2
-	
+flex:wrap;
+justify: center,
+
 }
 
 project-container{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: -0.5rem;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+margin: -0.5rem;
 }
 
 /* This container is needed to position the front and back side */
 .card-container {
-  display: flex;
+display: flex;
 }
 
 .card {
-  width: 300px;
-  height: 200%;
-  margin: 0 10px;
-  perspective: 1000px;
-  padding: 10px;
+width: flex;
+height: flex;
+margin: 0 10px;
+perspective: 1000px;
+padding: 10px;
 }
 
 .card-image{
-  width: 100%;
-  height: 100%;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;	
+width: 100%;
+height: 100%;
+border-top-left-radius: 10px;
+border-top-right-radius: 10px;
+border-bottom-left-radius: 10px;
+border-bottom-right-radius: 10px;	
 }
 
 .overlay-text{
@@ -129,15 +136,16 @@ project-container{
 /* Add any additional styles for the publications section */
 #publications {
   /* Add styles specific to the Publications section */
+  padding: 10px
 }
 
 #publications ul {
   list-style-type: disc;
-  padding: 0;
+  padding: 10px;
 }
 
 #publications li {
-  margin-bottom: 8px;
+  margin-bottom: 4px;
 }
 
 #publications a {
